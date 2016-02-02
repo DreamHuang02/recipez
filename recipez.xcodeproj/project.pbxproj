@@ -13,6 +13,11 @@
 		37B3101E1C58C80000304EEC /* recipez.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37B3101C1C58C80000304EEC /* recipez.xcdatamodeld */; };
 		37B310201C58C80000304EEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B3101F1C58C80000304EEC /* Assets.xcassets */; };
 		37B310231C58C80000304EEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B310211C58C80000304EEC /* LaunchScreen.storyboard */; };
+		37B3102F1C58CB5100304EEC /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B3102D1C58CB5100304EEC /* Recipe+CoreDataProperties.swift */; };
+		37B310301C58CB5100304EEC /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B3102E1C58CB5100304EEC /* Recipe.swift */; };
+		37B310341C58CFA100304EEC /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B310331C58CFA100304EEC /* RecipeCell.swift */; };
+		37B310381C58D5A300304EEC /* addRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B310371C58D5A300304EEC /* addRecipeVC.swift */; };
+		37B3103A1C58DAFE00304EEC /* detailRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B310391C58DAFE00304EEC /* detailRecipeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		37B3101F1C58C80000304EEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B310221C58C80000304EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B310241C58C80000304EEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B3102D1C58CB5100304EEC /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		37B3102E1C58CB5100304EEC /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		37B310331C58CFA100304EEC /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		37B310371C58D5A300304EEC /* addRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addRecipeVC.swift; sourceTree = "<group>"; };
+		37B310391C58DAFE00304EEC /* detailRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = detailRecipeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,8 @@
 		37B310091C58C80000304EEC = {
 			isa = PBXGroup;
 			children = (
+				37B3102D1C58CB5100304EEC /* Recipe+CoreDataProperties.swift */,
+				37B3102E1C58CB5100304EEC /* Recipe.swift */,
 				37B310141C58C80000304EEC /* recipez */,
 				37B310131C58C80000304EEC /* Products */,
 			);
@@ -56,15 +68,42 @@
 		37B310141C58C80000304EEC /* recipez */ = {
 			isa = PBXGroup;
 			children = (
+				37B3102A1C58C80E00304EEC /* Model */,
+				37B3102B1C58C81D00304EEC /* View */,
+				37B3102C1C58C82200304EEC /* Controller */,
 				37B310151C58C80000304EEC /* AppDelegate.swift */,
-				37B310171C58C80000304EEC /* ViewController.swift */,
-				37B310191C58C80000304EEC /* Main.storyboard */,
 				37B3101F1C58C80000304EEC /* Assets.xcassets */,
-				37B310211C58C80000304EEC /* LaunchScreen.storyboard */,
 				37B310241C58C80000304EEC /* Info.plist */,
 				37B3101C1C58C80000304EEC /* recipez.xcdatamodeld */,
 			);
 			path = recipez;
+			sourceTree = "<group>";
+		};
+		37B3102A1C58C80E00304EEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		37B3102B1C58C81D00304EEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37B310211C58C80000304EEC /* LaunchScreen.storyboard */,
+				37B310191C58C80000304EEC /* Main.storyboard */,
+				37B310331C58CFA100304EEC /* RecipeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		37B3102C1C58C82200304EEC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37B310171C58C80000304EEC /* ViewController.swift */,
+				37B310371C58D5A300304EEC /* addRecipeVC.swift */,
+				37B310391C58DAFE00304EEC /* detailRecipeVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +138,7 @@
 				TargetAttributes = {
 					37B310111C58C80000304EEC = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 9836GVB3ZJ;
 					};
 				};
 			};
@@ -139,8 +179,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B310181C58C80000304EEC /* ViewController.swift in Sources */,
+				37B3102F1C58CB5100304EEC /* Recipe+CoreDataProperties.swift in Sources */,
 				37B310161C58C80000304EEC /* AppDelegate.swift in Sources */,
+				37B3103A1C58DAFE00304EEC /* detailRecipeVC.swift in Sources */,
+				37B310341C58CFA100304EEC /* RecipeCell.swift in Sources */,
+				37B310381C58D5A300304EEC /* addRecipeVC.swift in Sources */,
 				37B3101E1C58C80000304EEC /* recipez.xcdatamodeld in Sources */,
+				37B310301C58CB5100304EEC /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +298,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = recipez/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Dream-Huang.recipez";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -264,7 +311,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = recipez/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Dream-Huang.recipez";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,6 +339,7 @@
 				37B310291C58C80000304EEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
